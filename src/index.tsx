@@ -1,7 +1,7 @@
 import { NativeModules } from 'react-native';
 
 type RawbtBridgeType = {
-  multiply(a: number, b: number): Promise<number>;
+  print(textToPrint: string): Promise<boolean>;
 };
 
 const { RawbtBridge } = NativeModules;

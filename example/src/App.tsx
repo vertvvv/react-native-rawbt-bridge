@@ -6,7 +6,7 @@ export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    RawbtBridge.multiply(3, 7).then(setResult);
+    RawbtBridge.print('test').then(console.log);
   }, []);
 
   return (
